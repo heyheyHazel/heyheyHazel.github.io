@@ -1,16 +1,16 @@
 # main links links
 main:
   - title: "About Me"
-    url: "/#about-me"
+    url: "/#-who-am-i"
 
-  - title: "Projects"
-    url: "/#-projects"
+  - title: "Educations"
+    url: "/#-educations"
 
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
 
-  - title: "Educations"
-    url: "/#-educations"
+  - title: "Projects"
+    url: "/#-projects"
 
   - title: "Internships"
     url: "/#-internships"

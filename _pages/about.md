@@ -8,11 +8,23 @@ redirect_from:
   - /about.html
 ---
 
-<span class='anchor' id='about-me'></span>
+# 👩‍💻 Who am I
 
 I am an M.S. student in Applied Statistics at **Xi'an Jiaotong University (XJTU)**, where my research interests lie in **Agentic Reinforcement Learning**, **self-evolving systems**, and **generative recommendation**. Previously, I received my B.S. in Data Science and Big Data Technology from **China Agricultural University (CAU)**.
 
 I have gained hands-on industry experience through internships at **Tencent WXG** (Agentic RL), **Baidu** (LLM applications in commercial advertising), and **Meituan** (AI product for financial platform), where I developed practical skills in building and deploying AI systems at scale.
+
+
+# 📖 Educations
+- *2025.09 - 2028.06*, **M.S. in Applied Statistics**, Xi'an Jiaotong University, Xi'an.
+- *2021.09 - 2025.06*, **B.S. in Data Science and Big Data Technology**, China Agricultural University, Beijing.
+- *2018.09 - 2021.06*, ChangJun Middle School, Changsha.
+
+
+# 🎖 Honors and Awards
+- *2025.10* **XJTU Special Scholarship for Academic Excellence** (Top 1%)
+- *2025.06* **Outstanding Graduate**, China Agricultural University
+- *2024.12* **First-Class Scholarship for Academic Excellence**, China Agricultural University (Top 5%)
 
 
 # 💻 Projects
@@ -32,18 +44,6 @@ I have gained hands-on industry experience through internships at **Tencent WXG*
 - [Finance-RAG](https://github.com/heyheyHazel/Finance-RAG) — Financial report analysis agent powered by **LlamaIndex + DeepSeek + BGE-M3**. Supports RAG-based Q&A, financial metrics computation (CAGR, ROE), Python code execution, chart generation, and multi-turn conversation via a Streamlit interface.
 - [MedicalGPT](https://github.com/heyheyHazel/MedicalGPT) — Medical dialogue model trained with the ChatGPT training pipeline, covering supervised fine-tuning and RLHF alignment.
 - [minimind](https://github.com/heyheyHazel/minimind) — Build and train a small-scale language model from scratch, covering tokenization, Transformer architecture, pretraining, and SFT.
-
-
-# 🎖 Honors and Awards
-- *2025.10* **XJTU Special Scholarship for Academic Excellence** (Top 1%)
-- *2025.06* **Outstanding Graduate**, China Agricultural University
-- *2024.12* **First-Class Scholarship for Academic Excellence**, China Agricultural University (Top 5%)
-
-
-# 📖 Educations
-- *2025.09 - 2028.06*, **M.S. in Applied Statistics**, Xi'an Jiaotong University, Xi'an.
-- *2021.09 - 2025.06*, **B.S. in Data Science and Big Data Technology**, China Agricultural University, Beijing.
-- *2018.09 - 2021.06*, ChangJun Middle School, Changsha.
 
 
 # 💻 Internships
