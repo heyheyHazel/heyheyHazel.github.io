@@ -41,11 +41,43 @@ I have gained hands-on industry experience through internships at **Tencent WXG*
 
 
 # 📖 Educations
-- *2025.09 - now* **M.S. in Applied Statistics**, Xi'an Jiaotong University
-- *2021.09 - 2025.06* **B.S. in Data Science and Big Data Technology**, China Agricultural University
+- *2025.09 - 2028.06*, **M.S. in Applied Statistics**, Xi'an Jiaotong University, Xi'an.
+- *2021.09 - 2025.06*, **B.S. in Data Science and Big Data Technology**, China Agricultural University, Beijing.
+- *2018.09 - 2021.06*, ChangJun Middle School, Changsha.
 
 
 # 💻 Internships
-- *2026.06 - now*, <img src='images/tencent.png' style='height:1.2em;vertical-align:middle'/> **Tencent**, WXG WeChat Group — Agentic RL
-- *2026.02 - 2026.05*, <img src='images/baidu.png' style='height:1.2em;vertical-align:middle'/> **Baidu**, Commercial Advertising Department — LLM Application (Agent, Strategy & Knowledge)
-- *2025.03 - 2025.06*, <img src='images/meituan.png' style='height:1.2em;vertical-align:middle'/> **Meituan**, Financial Platform — AI Product
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Tencent</div><img src='images/tencent.png' alt="Tencent" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Tencent - WXG](https://tencent.com)
+
+**Agentic RL · Ecommerce Recommendation**
+- June. 2026 - now
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Baidu</div><img src='images/baidu.png' alt="Baidu" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Baidu - Commercial Advertising](https://baidu.com)
+
+**LLM Application · Agent · Strategy & Knowledge Engineering**
+- Feb. 2026 - May. 2026
+
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Meituan</div><img src='images/meituan.png' alt="Meituan" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Meituan - Financial Service Platform](https://meituan.com)
+
+**AI Product**
+- Mar. 2025 - Jun. 2025
+
+</div>
+</div>
