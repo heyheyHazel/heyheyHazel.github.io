@@ -29,6 +29,8 @@ I have gained hands-on industry experience through internships at **Tencent WXG*
 
 # 💻 Projects
 
+## Agent
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Multi-Agent</div><img src='images/500x300.png' alt="Multi-Agent Ecommerce System" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -41,9 +43,46 @@ I have gained hands-on industry experience through internships at **Tencent WXG*
 </div>
 </div>
 
-- [Finance-RAG](https://github.com/heyheyHazel/Finance-RAG) — Financial report analysis agent powered by **LlamaIndex + DeepSeek + BGE-M3**. Supports RAG-based Q&A, financial metrics computation (CAGR, ROE), Python code execution, chart generation, and multi-turn conversation via a Streamlit interface.
-- [MedicalGPT](https://github.com/heyheyHazel/MedicalGPT) — Medical dialogue model trained with the ChatGPT training pipeline, covering supervised fine-tuning and RLHF alignment.
-- [minimind](https://github.com/heyheyHazel/minimind) — Build and train a small-scale language model from scratch, covering tokenization, Transformer architecture, pretraining, and SFT.
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RAG</div><img src='images/500x300.png' alt="Finance-RAG" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Finance-RAG](https://github.com/heyheyHazel/Finance-RAG)
+
+**LlamaIndex · DeepSeek · BGE-M3 · Milvus · Streamlit**
+
+[**GitHub**](https://github.com/heyheyHazel/Finance-RAG)
+- An intelligent financial report analysis agent supporting RAG-based Q&A, financial metrics computation (CAGR, ROE), Python code execution, chart generation, and multi-turn conversation via a Streamlit interface.
+</div>
+</div>
+
+
+## Post-Training
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RLHF</div><img src='images/500x300.png' alt="MedicalGPT" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[MedicalGPT](https://github.com/heyheyHazel/MedicalGPT)
+
+**SFT · RLHF · Medical Dialogue**
+
+[**GitHub**](https://github.com/heyheyHazel/MedicalGPT)
+- Medical dialogue model trained with the ChatGPT training pipeline, covering supervised fine-tuning and RLHF alignment for healthcare applications.
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">LLM</div><img src='images/500x300.png' alt="minimind" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[minimind](https://github.com/heyheyHazel/minimind)
+
+**Transformer · Pretraining · SFT · from Scratch**
+
+[**GitHub**](https://github.com/heyheyHazel/minimind)
+- Build and train a small-scale language model from scratch, covering tokenization, Transformer architecture, pretraining, and supervised fine-tuning.
+</div>
+</div>
 
 
 # 💻 Internships
