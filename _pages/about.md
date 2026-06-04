@@ -32,7 +32,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 
 ## 🤖 Agent
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Multi-Agent</div><img src='images/500x300.png' alt="Multi-Agent Ecommerce System" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Multi-Agent</div><img src='images/500x300.png' alt="Recommendation Agent" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Multi-Agent Ecommerce System](https://github.com/heyheyHazel/Multi-Agent-Ecommerce-System)
@@ -44,7 +44,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RAG</div><img src='images/500x300.png' alt="Finance-RAG" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">RAG</div><img src='images/500x300.png' alt="Investment Agent" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MIA: Multi-Agent Investment Assistant](https://github.com/heyheyHazel/Investment-Research-Agent)
@@ -75,7 +75,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 
 [minimind](https://github.com/heyheyHazel/minimind)
 
-**Transformer · Pretraining · SFT · from Scratch**
+**Llama · Pretraining · SFT · RLHF**
 
 - Build and train a small-scale Llama language model from scratch, covering tokenization, Transformer architecture, pretraining, and supervised fine-tuning.
 </div>
