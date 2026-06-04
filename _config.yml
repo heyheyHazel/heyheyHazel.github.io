@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Elaine"
-description              : "Statistics @ XJTU<br>Agentic RL · Self-evolving · Generative Recommendation"
+description              : "Statistics<br>Agentic RL · Self-evolving · Generative Recommendation"
 repository               : "heyheyHazel/heyheyHazel.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -23,12 +23,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Elaine"
   avatar           : "images/picture.jpg"
-  bio              : "28’ M.S. in Statistics"
+  bio              : "28’ M.S. @ XJTU 25’ B.S. @ CAU"
   location         : "Beijing, China"
   employer         :
   pubmed           :
   googlescholar    :
-  xhs              : "@heyheyHazel"
+  xhs              : 
   email            : "lotuswayne77@gmail.com"
   researchgate     :
   uri              :
