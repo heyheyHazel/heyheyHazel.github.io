@@ -84,29 +84,44 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 
 # 💻 Internships
 
-### [Tencent - WXG](https://tencent.com) · June. 2026 - now
+<div class='paper-box intern-box'>
+<div class='paper-box-image'><div><h3><a href="https://tencent.com">Tencent - WXG</a></h3><img src='images/tencent.png' alt="Tencent"></div></div>
+<div class='paper-box-text' markdown="1">
 
-**Agentic RL · SFT · Slime · vLLM · ReAct**
+**Agentic RL · SFT · Slime · vLLM · ReAct** · *June. 2026 - now*
 
 - **Agentflow**: intent routing + scenario agents; 99% intent accuracy, 500ms P95.
 - **Agent Loop**: multi-constraint recommendation via MCP tools and knapsack DP.
 - **Agentic RL**: LoRA cold start + RL on Slime; HitRate +11pp, constraints 98%.
 - **Highlight**: project owner (0→1), 50k queries + benchmark, tech article/talk.
 
+</div>
+</div>
 
-### [Baidu - Commercial Advertising](https://baidu.com) · Feb. 2026 - May. 2026
 
-**GRPO · veRL · LLM-as-a-Judge · Multi-agents · Skill**
+<div class='paper-box intern-box'>
+<div class='paper-box-image'><div><h3><a href="https://baidu.com">Baidu - Commercial Advertising</a></h3><img src='images/baidu.png' alt="Baidu"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**GRPO · veRL · LLM-as-a-Judge · Multi-agents · Skill** · *Feb. 2026 - May. 2026*
 
 - **Strategy mining**: HDBSCAN + Thompson Sampling; WeChat-add 2.5% → 5.2%.
 - **Model training**: 3k synthesized calls; GRPO lifted sales score 5.92 → 7.49.
 - **Evaluation**: LLM-as-a-Judge; Turing test 72% detection, 48% model win.
 
+</div>
+</div>
 
-### [Meituan - Financial Service Platform](https://meituan.com) · Mar. 2025 - Jun. 2025
 
-**Workflow · Dify · CoT · Few-shot · RAG**
+<div class='paper-box intern-box'>
+<div class='paper-box-image'><div><h3><a href="https://meituan.com">Meituan - Financial Service Platform</a></h3><img src='images/meituan.png' alt="Meituan"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Workflow · Dify · CoT · Few-shot · RAG** · *Mar. 2025 - Jun. 2025*
 
 - **Ticket classification**: CoT prompts in a Dify workflow; accuracy >95% (+30pp).
 - **Ticket retrieval**: hybrid BM25 + vector recall; Top-10 tickets end to end.
 - **Highlight**: project owner; LLM use case shipped to the operations team.
+
+</div>
+</div>
