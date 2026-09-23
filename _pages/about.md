@@ -12,7 +12,7 @@ redirect_from:
 
 Currently, I am an master student majoring in Applied Statistics at **Xi'an Jiaotong University (XJTU)**, where my research interests lie in **Agentic Reinforcement Learning**, **self-evolving systems**, and **generative recommendation**. Previously, I received my B.S. in Data Science and Big Data Technology from **China Agricultural University (CAU)**.
 
-I have gained hands-on industry experience through internships at **Tencent** (ecommerce recommedation at WXG), **Baidu** (LLM applications in commercial advertising), and **Meituan** (AI product for financial service platform), where I developed practical skills in building and deploying AI systems at scale.
+I have gained hands-on industry experience through internships at **Tencent** (ecommerce recommendation at WXG), **Baidu** (LLM applications in commercial advertising), and **Meituan** (LLM applications on the financial service platform), where I developed practical skills in building and deploying AI systems at scale.
 
 
 # 📖 Educations
@@ -83,37 +83,30 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 
 
 # 💻 Internships
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/tencent.png' alt="Tencent" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
 
-[Tencent - WXG](https://tencent.com)
+### [Tencent - WXG](https://tencent.com) · June. 2026 - now
 
-**Agentic RL · Ecommerce Recommendation**
-- June. 2026 - now
+**Agentic RL · SFT · Slime · vLLM · ReAct**
 
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/baidu.png' alt="Baidu" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Baidu - Commercial Advertising](https://baidu.com)
-
-**LLM Application · Agent · Policy & Knowledge Engineering**
-- Feb. 2026 - May. 2026
-
-</div>
-</div>
+- **Agentflow**: built an intent-classification → routing → scenario-agent architecture covering product recommendation, coupon claiming and customer service; 99% accuracy on 7-class intent recognition at 500ms P95 latency.
+- **Agent Loop**: defined combined recommendation under multi-dimensional constraints; built profile, memory and product-search MCP tools, solved coupon and budget constraints with grouped-knapsack DP, and bounded the loop with ReAct.
+- **Agentic RL**: cold-started Qwen3-4B with a 200-step LoRA on 3k curated teacher trajectories; built the RL pipeline on Slime with outcome, process and format rewards, reaching 98% constraint satisfaction and +11pp HitRate.
+- **Highlight**: project owner from 0 to 1, leading architecture selection, data engineering, benchmark and evaluation; built 50k shopping queries with a frozen 1k benchmark; wrote an internal tech article and gave a team tech talk.
 
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/meituan.png' alt="Meituan" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+### [Baidu - Commercial Advertising](https://baidu.com) · Feb. 2026 - May. 2026
 
-[Meituan - Financial Service Platform](https://meituan.com)
+**GRPO · veRL · LLM-as-a-Judge · Multi-agents · Skill**
 
-**AI Product**
-- Mar. 2025 - Jun. 2025
+- **Dynamic strategy selection**: mined high-conversion scripts from real sales calls with Embedding + HDBSCAN clustering; matched strategy clusters by intent at inference with Thompson Sampling and an over-heating guard; WeChat-add rate 2.5% → 5.2% in small-traffic tests.
+- **Model training**: designed a data synthesis pipeline (multi-agent simulation + real-dialogue injection + quality filtering) yielding 3k human-level calls; GRPO with semantic-similarity, length and Bayesian-reasoning rewards lifted the sales score 5.92 → 7.49 (+26.5%).
+- **Evaluation**: built an LLM-as-a-Judge pipeline covering 6 core sales skills and 7 fine-grained metrics; ran a Turing test with frontline sales (72% human detection rate, 48% model-win rate).
 
-</div>
-</div>
+
+### [Meituan - Financial Service Platform](https://meituan.com) · Mar. 2025 - Jun. 2025
+
+**Workflow · Dify · CoT · Few-shot · RAG**
+
+- **Complaint ticket classification**: built the complaint taxonomy across business lines along the user journey; designed Multi-step CoT + Few-shot prompts on a business knowledge base; shipped a Dify workflow (load → preprocess → inference → parse/output) with >95% accuracy (+30pp).
+- **Ticket retrieval assistant**: rewrote retrieval queries into structured search plans; used parent-child document indexing with hybrid BM25 + vector recall, re-ranked by term frequency and business weights, and returned Top-10 tickets through an end-to-end workflow.
+- **Highlight**: project owner, driving the LLM application on the complaint data platform from 0 to 1 — annotation workflow plus a retrieval assistant delivered to the operations team.
