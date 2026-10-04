@@ -10,7 +10,7 @@ redirect_from:
 
 # 👩‍💻 Who am I
 
-Currently, I am an master student majoring in Applied Statistics at **Xi'an Jiaotong University (XJTU)**, where my research interests lie in **Agentic Reinforcement Learning**, **self-evolving systems**, and **generative recommendation**. Previously, I received my B.S. in Data Science and Big Data Technology from **China Agricultural University (CAU)**.
+Currently, I am a master student majoring in Applied Statistics at **Xi'an Jiaotong University (XJTU)**, where my research interests lie in **Agentic Reinforcement Learning (Agentic RL)**, **Recursive Self-Improvement (RSI)**, and **LLM Infrastructure (LLM Infra)**. Previously, I received my B.S. in Data Science and Big Data Technology from **China Agricultural University (CAU)**.
 
 I have gained hands-on industry experience through internships at **Tencent** (ecommerce recommendation at WXG), **Baidu** (LLM applications in commercial advertising), and **Meituan** (LLM applications on the financial service platform), where I developed practical skills in building and deploying AI systems at scale.
 
@@ -32,52 +32,55 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 
 ## 🤖 Agent
 
-<div class='paper-box'><div class='paper-box-image'><div><img src="{{ '/images/e-commerce.png' | relative_url }}" alt="Recommendation Agent" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><h3><a href="https://github.com/heyheyHazel/Awesome-Agentic-Shopping-Assistant">Agentic Shopping Assistant</a></h3><img src="{{ '/images/e-commerce.png' | relative_url }}" alt="Agentic Shopping Assistant" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Multi-Agent Shopping Assistant](https://github.com/heyheyHazel/Multi-Agent-Ecommerce-System)
+**Python 3.12 · FastAPI · React 19 · ONNX · RRF · GRPO** · *Sep. 2026 - now*
 
-**LangGraph · Multi-agent · Redis · FastAPI · React**
-
-- A multi-agent e-commerce shopping assistant that orchestrates recommendation, copywriting, and inventory agents through a Supervisor pattern. Features include user profiling with RFM clustering, LLM reranking, Thompson Sampling for A/B testing, and SSE streaming responses.
+- **One agent loop**: intent, query rewriting, product picking and copywriting in a single tool-calling loop; 1 LLM call for chat, 2–4 per shopping turn.
+- **Deterministic tools**: hybrid keyword + local ONNX vector recall (RRF), quantile RFM profiles, budget/category hard filters that never relax.
+- **ShopSimulator data**: 23,315 real Chinese products over 9 categories and 4,009 shopper personas converted from the ShopSimulator release; recall median 7–9 ms.
+- **Post-training**: teacher trajectories → turn-level SFT (real loss mask) → on-policy GRPO/RLVR; 1.7B full-parameter SFT on one 24 GB card; 117 tests without GPU.
 </div>
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><img src="{{ '/images/mia.png' | relative_url }}" alt="Investment Agent" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><h3><a href="https://github.com/heyheyHazel/Investment-Research-Agent">M.I.A: Multi-Agent Investment Assistant</a></h3><img src="{{ '/images/mia.png' | relative_url }}" alt="M.I.A: Multi-Agent Investment Assistant" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[MIA: Multi-Agent Investment Assistant](https://github.com/heyheyHazel/Investment-Research-Agent)
+**LangGraph · Supervisor-worker · DeepSeek-R1 · BGE-reranker-v2-m3 · Milvus · Streamlit** · *Mar. 2026 - May. 2026*
 
-**LangGraph · Supervisor-worker · BGE-M3 · Milvus · Streamlit**
-
-- M.I.A. is a multi-agent investment research and analysis system designed using LangGraph. Employing a multi-agent architecture, it implements Agentic RAG and supports intelligent Q&A regarding research reports, automated generation of financial charts, and multi-source data fusion analysis, aiming to provide buy-side participants in the secondary market with precise market insights and investment recommendations.
+- **Eight specialist agents**: a supervisor decomposes and routes tasks to report / financial / news / announcement / market / code / analysis / QC agents over a shared LangGraph state.
+- **Agentic RAG**: research reports and financials into vector stores (Chroma / FAISS / Milvus) plus DuckDB tables, reranked by BGE-reranker-v2-m3.
+- **Code + QC loop**: the code agent writes and runs matplotlib code for charts; the QC agent validates outputs and drives self-reflection before returning results.
+- **Buy-side view**: earnings forecast, segment valuation and peer comparison over AKShare market data and live news sentiment.
 </div>
 </div>
 
 
 ## 🛠️ Post-Training
 
-<div class='paper-box'><div class='paper-box-image'><div><img src="{{ '/images/medicalgpt.png' | relative_url }}" alt="MedicalGPT" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><h3><a href="https://github.com/heyheyHazel/MedicalGPT">MedicalGPT: Medical LLM Post-Training</a></h3><img src="{{ '/images/medicalgpt.png' | relative_url }}" alt="MedicalGPT" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[MedicalGPT](https://github.com/heyheyHazel/MedicalGPT)
+**Qwen2.5-7B · CPT · SFT · RM · PPO · DPO · GRPO** · *Feb. 2026*
 
-**CPT · SFT · PPO · GRPO · DPO · LLM-as-a-Judge**
-
-- A medical large language model trained through a comprehensive pipeline encompassing continual pre-training, supervised fine-tuning, RLHF (including reward modeling and reinforcement learning training), and DPO (Direct Preference Optimization).
+- **Full training pipeline**: continual pre-training → SFT → reward modeling → PPO → DPO → GRPO, each stage with LoRA and full-parameter recipes.
+- **CPT + SFT**: medical C-Eval (basic_medicine / clinical / physician) 79.91 → 82.79; baseline SFT exposed the alignment tax, knowledge-matched SFT recovered it to 84.98.
+- **Data synthesis**: rebuilt DPO pairs from noisy data into an RLAIF pipeline (chief-complaint / history / question prompts, DeepSeek-R1 asymmetric pairs, 4:1 general mix) and built PPO reasoning data with SFT-model negatives.
+- **Incremental on the open-source project**: reworked the GRPO reward (format, semantic similarity, LLM judge, PPL penalty) to obtain explicit CoT, adapted PPO to single-card and DDP multi-card training.
 </div>
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><img src="{{ '/images/minimind.png' | relative_url }}" alt="minimind" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><h3><a href="https://github.com/heyheyHazel/minimind">MiniMind: LLM from Scratch</a></h3><img src="{{ '/images/minimind.png' | relative_url }}" alt="MiniMind" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[minimind](https://github.com/heyheyHazel/minimind)
+**PyTorch · Llama-style · Pretraining · SFT · LoRA · DPO · RLAIF** · *Feb. 2026*
 
-**Llama · Pretraining · SFT · RLHF**
-
-- Build and train a small-scale Llama language model from scratch, covering tokenization, Transformer architecture, pretraining, and supervised fine-tuning.
+- **From scratch in PyTorch**: implemented a Llama-style model end to end — tokenizer training, attention and Transformer blocks (GQA / MoE variants), pretraining, SFT, LoRA, DPO and RLAIF (PPO / GRPO).
+- **Architecture depth**: every core algorithm written in native PyTorch instead of high-level wrappers; the 25.8M-parameter model (~1/7000 of GPT-3) trains in about 2 hours on a single 3090.
+- **Reasoning**: builds an R1-Zero-style reasoning model with fully open data and weights.
 </div>
 </div>
 
