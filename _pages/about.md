@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /home/
 title: ""
 excerpt: ""
 author_profile: true
@@ -32,7 +32,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 
 ## 🤖 Agent
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/e-commerce.png' alt="Recommendation Agent" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src="{{ '/images/e-commerce.png' | relative_url }}" alt="Recommendation Agent" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Multi-Agent Shopping Assistant](https://github.com/heyheyHazel/Multi-Agent-Ecommerce-System)
@@ -44,7 +44,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/mia.png' alt="Investment Agent" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src="{{ '/images/mia.png' | relative_url }}" alt="Investment Agent" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MIA: Multi-Agent Investment Assistant](https://github.com/heyheyHazel/Investment-Research-Agent)
@@ -58,7 +58,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 
 ## 🛠️ Post-Training
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/medicalgpt.png' alt="MedicalGPT" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src="{{ '/images/medicalgpt.png' | relative_url }}" alt="MedicalGPT" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MedicalGPT](https://github.com/heyheyHazel/MedicalGPT)
@@ -70,7 +70,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/minimind.png' alt="minimind" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src="{{ '/images/minimind.png' | relative_url }}" alt="minimind" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [minimind](https://github.com/heyheyHazel/minimind)
@@ -85,7 +85,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 # 💻 Internships
 
 <div class='paper-box intern-box'>
-<div class='paper-box-image'><div><h3><a href="https://tencent.com">Tencent - WXG</a></h3><img src='images/tencent.png' alt="Tencent"></div></div>
+<div class='paper-box-image'><div><h3><a href="https://tencent.com">Tencent - WXG</a></h3><img src="{{ '/images/tencent.png' | relative_url }}" alt="Tencent"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Agentic RL · SFT · Slime · vLLM · ReAct** · *June. 2026 - now*
@@ -100,7 +100,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 
 
 <div class='paper-box intern-box'>
-<div class='paper-box-image'><div><h3><a href="https://baidu.com">Baidu - Commercial Advertising</a></h3><img src='images/baidu.png' alt="Baidu"></div></div>
+<div class='paper-box-image'><div><h3><a href="https://baidu.com">Baidu - Commercial Advertising</a></h3><img src="{{ '/images/baidu.png' | relative_url }}" alt="Baidu"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **GRPO · veRL · LLM-as-a-Judge · Multi-agents · Skill** · *Feb. 2026 - May. 2026*
@@ -114,7 +114,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 
 
 <div class='paper-box intern-box'>
-<div class='paper-box-image'><div><h3><a href="https://meituan.com">Meituan - Financial Service Platform</a></h3><img src='images/meituan.png' alt="Meituan"></div></div>
+<div class='paper-box-image'><div><h3><a href="https://meituan.com">Meituan - Financial Service Platform</a></h3><img src="{{ '/images/meituan.png' | relative_url }}" alt="Meituan"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Workflow · Dify · CoT · Few-shot · RAG** · *Mar. 2025 - Jun. 2025*
