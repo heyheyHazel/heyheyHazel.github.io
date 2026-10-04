@@ -14,3 +14,21 @@ main:
 
   - title: "Internships"
     url: "/home/#-internships"
+
+
+# 中文页面导航
+main_zh:
+  - title: "关于我"
+    url: "/zh/#who-am-i"
+
+  - title: "教育经历"
+    url: "/zh/#educations"
+
+  - title: "荣誉奖项"
+    url: "/zh/#honors"
+
+  - title: "项目"
+    url: "/zh/#projects"
+
+  - title: "实习经历"
+    url: "/zh/#internships"

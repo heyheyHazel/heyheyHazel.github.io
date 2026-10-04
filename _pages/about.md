@@ -3,6 +3,9 @@ permalink: /home/
 title: ""
 excerpt: ""
 author_profile: true
+lang: en
+nav_data: main
+alt_lang_url: /zh/
 redirect_from:
   - /about/
   - /about.html
@@ -35,7 +38,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 <div class='paper-box'><div class='paper-box-image'><div><h3><a href="https://github.com/heyheyHazel/Awesome-Agentic-Shopping-Assistant">Agentic Shopping Assistant</a></h3><img src="{{ '/images/e-commerce.png' | relative_url }}" alt="Agentic Shopping Assistant" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Python 3.12 · FastAPI · React 19 · ONNX · RRF · GRPO** · *Sep. 2026 - now*
+**Tool-calling agent · Hybrid RRF retrieval · Turn-level SFT · GRPO/RLVR**
 
 - **One agent loop**: intent, query rewriting, product picking and copywriting in a single tool-calling loop; 1 LLM call for chat, 2–4 per shopping turn.
 - **Deterministic tools**: hybrid keyword + local ONNX vector recall (RRF), quantile RFM profiles, budget/category hard filters that never relax.
@@ -48,7 +51,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 <div class='paper-box'><div class='paper-box-image'><div><h3><a href="https://github.com/heyheyHazel/Investment-Research-Agent">M.I.A: Multi-Agent Investment Assistant</a></h3><img src="{{ '/images/mia.png' | relative_url }}" alt="M.I.A: Multi-Agent Investment Assistant" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**LangGraph · Supervisor-worker · DeepSeek-R1 · BGE-reranker-v2-m3 · Milvus · Streamlit** · *Mar. 2026 - May. 2026*
+**LangGraph · Supervisor-worker · Agentic RAG · DeepSeek-R1 · BGE-reranker-v2-m3**
 
 - **Eight specialist agents**: a supervisor decomposes and routes tasks to report / financial / news / announcement / market / code / analysis / QC agents over a shared LangGraph state.
 - **Agentic RAG**: research reports and financials into vector stores (Chroma / FAISS / Milvus) plus DuckDB tables, reranked by BGE-reranker-v2-m3.
@@ -63,7 +66,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 <div class='paper-box'><div class='paper-box-image'><div><h3><a href="https://github.com/heyheyHazel/MedicalGPT">MedicalGPT: Medical LLM Post-Training</a></h3><img src="{{ '/images/medicalgpt.png' | relative_url }}" alt="MedicalGPT" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Qwen2.5-7B · CPT · SFT · RM · PPO · DPO · GRPO** · *Feb. 2026*
+**Qwen2.5-7B · CPT · SFT · RM · PPO · DPO · GRPO**
 
 - **Full training pipeline**: continual pre-training → SFT → reward modeling → PPO → DPO → GRPO, each stage with LoRA and full-parameter recipes.
 - **CPT + SFT**: medical C-Eval (basic_medicine / clinical / physician) 79.91 → 82.79; baseline SFT exposed the alignment tax, knowledge-matched SFT recovered it to 84.98.
@@ -76,7 +79,7 @@ I have gained hands-on industry experience through internships at **Tencent** (e
 <div class='paper-box'><div class='paper-box-image'><div><h3><a href="https://github.com/heyheyHazel/minimind">MiniMind: LLM from Scratch</a></h3><img src="{{ '/images/minimind.png' | relative_url }}" alt="MiniMind" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**PyTorch · Llama-style · Pretraining · SFT · LoRA · DPO · RLAIF** · *Feb. 2026*
+**Llama-style · Native PyTorch · Pretraining · SFT · LoRA · DPO · RLAIF**
 
 - **From scratch in PyTorch**: implemented a Llama-style model end to end — tokenizer training, attention and Transformer blocks (GQA / MoE variants), pretraining, SFT, LoRA, DPO and RLAIF (PPO / GRPO).
 - **Architecture depth**: every core algorithm written in native PyTorch instead of high-level wrappers; the 25.8M-parameter model (~1/7000 of GPT-3) trains in about 2 hours on a single 3090.

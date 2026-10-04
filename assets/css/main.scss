@@ -158,3 +158,36 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+/* Language switch pinned to the top-right corner of the masthead */
+.masthead__inner-wrap {
+    position: relative;
+    padding-right: 4.5em;
+}
+
+.masthead__lang {
+    position: absolute;
+    top: 50%;
+    right: .75em;
+    transform: translateY(-50%);
+    z-index: 30;
+
+    a {
+        display: inline-block;
+        padding: .25em 1em;
+        color: $masthead-link-color;
+        font-size: .8em;
+        font-weight: bold;
+        line-height: 1.6;
+        text-decoration: none;
+        border: 1px solid $border-color;
+        border-radius: 999px;
+        -webkit-transition: color .18s ease, border-color .18s ease;
+                transition: color .18s ease, border-color .18s ease;
+
+        &:hover {
+            color: $link-color;
+            border-color: $link-color;
+        }
+    }
+}

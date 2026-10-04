@@ -4,13 +4,19 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="{{ '/' | relative_url }}" target="_self">Homepage</a></li>
-          {% for link in site.data.navigation.main %}
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="{{ '/' | relative_url }}" target="_self">{{ page.home_label | default: "Homepage" }}</a></li>
+          {% assign nav_data = site.data.navigation[page.nav_data] | default: site.data.navigation.main %}
+          {% for link in nav_data %}
             <li class="masthead__menu-item"><a href="{{ link.url | relative_url }}" target="_self">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
+    {% if page.alt_lang_url %}
+      <div class="masthead__lang">
+        <a href="{{ page.alt_lang_url | relative_url }}" target="_self" title="{% if page.lang == 'zh' %}Switch to English{% else %}切换到中文{% endif %}">{% if page.lang == 'zh' %}EN{% else %}中文{% endif %}</a>
+      </div>
+    {% endif %}
   </div>
 </div>

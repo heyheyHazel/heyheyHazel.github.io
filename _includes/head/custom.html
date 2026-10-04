@@ -9,6 +9,10 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="{{ '/assets/css/academicons.css' | relative_url }}"/>
 
+{% if page.alt_lang_url %}
+<link rel="alternate" hreflang="{% if page.lang == 'zh' %}en{% else %}zh{% endif %}" href="{{ page.alt_lang_url | relative_url }}">
+{% endif %}
+
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
