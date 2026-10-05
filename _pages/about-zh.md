@@ -16,7 +16,7 @@ redirect_from:
 
 我目前在**西安交通大学（XJTU）**攻读应用统计硕士，主要关注 **Agentic Reinforcement Learning**、**Recursive Self-Improvement** 和 **LLM Infrastructure**。本科就读于**中国农业大学（CAU）**数据科学与大数据技术专业。
 
-我曾在**腾讯**、**百度**和**美团**实习，参与 AI 系统的开发与部署，积累了面向实际业务场景的工程经验。
+我曾在**腾讯**、**百度**和**美团**实习，主要从事面向实际业务场景的 LLM 后训练，以及 AI 系统的构建与部署。
 
 
 # 📖 教育经历 {#educations}

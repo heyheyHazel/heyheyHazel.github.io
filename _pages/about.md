@@ -15,7 +15,7 @@ redirect_from:
 
 Currently, I am a master student majoring in Applied Statistics at **Xi'an Jiaotong University (XJTU)**, where my research interests lie in **Agentic Reinforcement Learning**, **Recursive Self-Improvement**, and **LLM Infrastructure**. Previously, I received my B.S. in Data Science and Big Data Technology from **China Agricultural University (CAU)**.
 
-I have gained hands-on industry experience through internships at **Tencent**, **Baidu**, and **Meituan**, where I developed practical skills in building and deploying AI systems at scale.
+During my internships at **Tencent**, **Baidu**, and **Meituan**, I worked on LLM post-training and the development and deployment of AI systems for real-world business applications.
 
 
 # 📖 Educations
