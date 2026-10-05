@@ -138,6 +138,30 @@
     }
 }
 
+/* Normalize visible company lettering while retaining the original logo assets. */
+.paper-box.intern-box .intern-logo {
+    position: relative;
+    width: 150px;
+    height: 64px;
+    overflow: hidden;
+}
+
+.paper-box.intern-box .intern-logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 210px;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    transform: translate(-50%, -50%);
+}
+
+.paper-box.intern-box .intern-logo--meituan img {
+    width: 150px;
+    clip-path: inset(21% 15%);
+}
+
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
     content: ''; 

@@ -93,7 +93,7 @@ redirect_from:
 # 💻 实习经历 {#internships}
 
 <div class='paper-box intern-box'>
-<div class='paper-box-image'><div><h3><a href="https://tencent.com">腾讯 WXG</a></h3><img src="{{ '/images/tencent.png' | relative_url }}" alt="Tencent"></div></div>
+<div class='paper-box-image'><div><h3><a href="https://tencent.com">腾讯 WXG</a></h3><div class="intern-logo intern-logo--tencent"><img src="{{ '/images/tencent.png' | relative_url }}" alt="Tencent"></div></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Agentic RL · SFT · Slime · vLLM · ReAct**
@@ -108,7 +108,7 @@ redirect_from:
 
 
 <div class='paper-box intern-box'>
-<div class='paper-box-image'><div><h3><a href="https://baidu.com">百度 商业广告</a></h3><img src="{{ '/images/baidu.png' | relative_url }}" alt="Baidu"></div></div>
+<div class='paper-box-image'><div><h3><a href="https://baidu.com">百度 商业广告</a></h3><div class="intern-logo intern-logo--baidu"><img src="{{ '/images/baidu.png' | relative_url }}" alt="Baidu"></div></div></div>
 <div class='paper-box-text' markdown="1">
 
 **GRPO · veRL · LLM-as-a-Judge · Multi-agents · Skill**
@@ -122,7 +122,7 @@ redirect_from:
 
 
 <div class='paper-box intern-box'>
-<div class='paper-box-image'><div><h3><a href="https://meituan.com">美团 金融服务平台</a></h3><img src="{{ '/images/meituan.png' | relative_url }}" alt="Meituan"></div></div>
+<div class='paper-box-image'><div><h3><a href="https://meituan.com">美团 金融服务平台</a></h3><div class="intern-logo intern-logo--meituan"><img src="{{ '/images/meituan.png' | relative_url }}" alt="Meituan"></div></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Workflow · Dify · CoT · Few-shot · RAG**
