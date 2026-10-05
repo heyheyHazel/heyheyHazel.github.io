@@ -14,14 +14,14 @@ redirect_from:
 
 # 👩‍💻 我是谁 {#who-am-i}
 
-目前我在**西安交通大学（XJTU）**攻读应用统计硕士，研究兴趣集中在 **Agentic Reinforcement Learning（Agentic RL）**、**Recursive Self-Improvement（RSI）**与 **LLM Infrastructure（LLM Infra）**三方面。此前我在**中国农业大学（CAU）**取得数据科学与大数据技术学士学位。
+我目前在**西安交通大学（XJTU）**攻读应用统计硕士，主要关注 **Agentic Reinforcement Learning**、**Recursive Self-Improvement** 和 **LLM Infrastructure**。本科就读于**中国农业大学（CAU）**数据科学与大数据技术专业。
 
-我曾在**腾讯**（WXG 电商推荐）、**百度**（商业广告大模型应用）与**美团**（金融服务平台大模型应用）实习，积累了构建并落地大规模 AI 系统的工程经验。
+我曾在**腾讯**、**百度**和**美团**实习，参与 AI 系统的开发与部署，积累了面向实际业务场景的工程经验。
 
 
 # 📖 教育经历 {#educations}
-- *2025.09 - 2028.06*，**应用统计 硕士**，西安交通大学，西安。
-- *2021.09 - 2025.06*，**数据科学与大数据技术 学士**，中国农业大学，北京。
+- *2025.09 - 2028.06*，**应用统计硕士**，西安交通大学，西安。
+- *2021.09 - 2025.06*，**数据科学与大数据技术学士**，中国农业大学，北京。
 
 
 # 🎖 荣誉奖项 {#honors}
@@ -40,12 +40,12 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><h3><a href="https://github.com/heyheyHazel/Awesome-Agentic-Shopping-Assistant">Agentic Shopping Assistant</a></h3><img src="{{ '/images/e-commerce.png' | relative_url }}" alt="Agentic Shopping Assistant" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Tool-calling agent · Hybrid RRF retrieval · Turn-level SFT · GRPO/RLVR**
+**Tool-calling agent · Hybrid RRF retrieval · SFT · RLVR · OPD**
 
-- **单 Agent 循环**：意图理解、query 改写、选品与文案都在同一个 tool-calling 循环内完成；闲聊 1 次 LLM 调用，购物咨询 2–4 次。
-- **确定性工具**：关键词 + 本地 ONNX 向量混合召回（RRF 融合）、分位 RFM 画像、预算/类目硬过滤永不放宽。
-- **ShopSimulator 数据**：基于 ShopSimulator 转换的 23,315 件中文商品、9 个类目与 4,009 个用户画像；带过滤召回中位 7–9 ms。
-- **后训练**：教师轨迹 → turn 级 SFT（真实 loss mask）→ on-policy GRPO/RLVR；1.7B 全参 SFT 单卡 24 GB 可跑；117 个测试无需 GPU。
+- **购物数据**：基于 ShopSimulator 数据整理了 23,315 件真实商品的中文信息，涵盖 9 个类目，并转换得到 4,009 个用户画像。
+- **Agent 流程**：在同一工具调用循环中完成意图理解、查询改写、选品和文案生成；闲聊仅需调用 1 次 LLM，每轮购物咨询调用 2–4 次。
+- **工具调用**：通过 RRF 融合关键词检索与本地 ONNX 向量召回，结合基于分位数的 RFM 用户画像，并按预算和商品类目进行硬性过滤。
+- **后训练**：以教师模型的交互轨迹构建逐轮 SFT 数据，再进行 on-policy RLVR/OPD 训练。
 </div>
 </div>
 
@@ -55,10 +55,10 @@ redirect_from:
 
 **LangGraph · Supervisor-worker · Agentic RAG · DeepSeek-R1 · BGE-reranker-v2-m3**
 
-- **八个专业 Agent**：Supervisor 负责任务分解与路由，协同研报 / 财报 / 新闻 / 公告 / 行情 / 代码 / 分析 / 质检 Agent，共享 LangGraph 状态。
-- **Agentic RAG**：研报与财报解析进向量库（Chroma / FAISS / Milvus）与 DuckDB 表，由 BGE-reranker-v2-m3 重排。
-- **代码 + 质检闭环**：代码 Agent 生成并执行 matplotlib 代码出图，质检 Agent 校验结果并驱动自我反思。
-- **买方视角**：基于 AKShare 行情与实时舆情的盈利预测、分部估值与同业对比。
+- **多 Agent 协作**：Supervisor 分解任务并分派给研报、财报、新闻、公告、行情、代码、分析和质检八类 Agent，通过 LangGraph 共享状态。
+- **Agentic RAG**：解析研报与财报，将内容存入向量库（Chroma / FAISS / Milvus）和 DuckDB 数据表，再使用 BGE-reranker-v2-m3 对检索结果重排。
+- **图表生成与质检**：代码 Agent 编写并运行 matplotlib 代码生成图表，质检 Agent 检查输出，并通过反馈推动自我反思与修正。
+- **买方投研分析**：结合 AKShare 行情数据与实时新闻情绪，开展盈利预测、分部估值和同业比较。
 </div>
 </div>
 
@@ -70,10 +70,10 @@ redirect_from:
 
 **Qwen2.5-7B · CPT · SFT · RM · PPO · DPO · GRPO**
 
-- **全链路训练**：增量预训练 → SFT → 奖励建模 → PPO → DPO → GRPO，每个阶段都提供 LoRA 与全参配方。
-- **CPT + SFT**：医疗 C-Eval（basic_medicine / clinical / physician）79.91 → 82.79；baseline SFT 出现对齐税，知识匹配版 SFT 拉回 84.98。
-- **数据合成**：把带噪音的偏好数据重做成 RLAIF 链路（主诉 / 现病史 / 核心问题重构 + DeepSeek-R1 非对称正负样本 + 4:1 通用域混合），并用 SFT 模型产出负样本构造 PPO 推理数据。
-- **对开源项目的增量改进**：重写 GRPO 奖励（格式 / 语义相似度 / LLM 打分 / 困惑度惩罚）以获得显式 CoT，并把 PPO 适配到单卡与 DDP 多卡。
+- **完整训练流程**：覆盖持续预训练、SFT、奖励模型训练以及 PPO、DPO、GRPO，各阶段均提供 LoRA 和全参数训练方案。
+- **CPT + SFT**：在医疗 C-Eval 子集（basic_medicine / clinical / physician）上，CPT 将得分从 79.91 提升至 82.79；基线 SFT 出现知识能力下降（alignment tax），采用知识匹配的 SFT 数据后，得分进一步提升至 84.98。
+- **数据合成**：针对含噪声的偏好数据，围绕主诉、病史和问题重构提示词，利用 DeepSeek-R1 构造非对称偏好样本对，形成 RLAIF 数据流程；同时使用 SFT 模型生成负样本，构建 PPO 推理训练数据。
+- **开源项目改进**：重新设计 GRPO 奖励，综合格式、语义相似度、LLM 评分和困惑度惩罚，引导模型生成显式 CoT；适配 PPO 的单卡训练与 DDP 多卡训练。
 </div>
 </div>
 
@@ -81,11 +81,11 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><h3><a href="https://github.com/heyheyHazel/minimind">MiniMind: LLM from Scratch</a></h3><img src="{{ '/images/minimind.png' | relative_url }}" alt="MiniMind" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Llama-style · Native PyTorch · Pretraining · SFT · LoRA · DPO · RLAIF**
+**Llama · Pretraining · SFT · LoRA · DPO · RLAIF**
 
-- **从零实现**：用原生 PyTorch 端到端实现 Llama 式模型——分词器、注意力与 Transformer 模块（GQA / MoE 变体）、预训练、SFT、LoRA、DPO 与 RLAIF（PPO / GRPO）。
-- **架构与工程深度**：核心算法全部手写而非依赖高层封装；25.8M 参数（约 GPT-3 的 1/7000）在单卡 3090 上约 2 小时可训。
-- **推理模型**：构建 R1-Zero 式推理模型，数据与权重全部开源。
+- **从零实现**：使用原生 PyTorch 实现 Llama 风格的模型，涵盖分词器训练、注意力机制与 Transformer 模块（GQA / MoE 变体），以及预训练、SFT、LoRA、DPO 和 RLAIF（PPO / GRPO）。
+- **核心算法与训练**：使用原生 PyTorch 编写各项核心算法；25.8M 参数模型（约为 GPT-3 的 1/7000）在单张 4090 上约 2 小时即可完成训练。
+- **推理模型**：构建 R1-Zero 风格的推理模型，训练数据与模型权重均开源。
 </div>
 </div>
 
@@ -96,12 +96,12 @@ redirect_from:
 <div class='paper-box-image'><div><h3><a href="https://tencent.com">腾讯 WXG</a></h3><img src="{{ '/images/tencent.png' | relative_url }}" alt="Tencent"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Agentic RL · SFT · Slime · vLLM · ReAct** · *2026.06 - 至今*
+**Agentic RL · SFT · Slime · vLLM · ReAct**
 
-- **Agentflow**：意图路由 + 场景 Agent；意图准确率 99%，P95 500ms。
-- **Agent Loop**：基于 MCP 工具与背包 DP 的多约束推荐。
-- **Agentic RL**：LoRA 冷启动 + Slime 上做 RL；HitRate +11pp，约束满足率 98%。
-- **Highlight**：项目 owner（0→1），5 万条 query 与 benchmark，产出技术文章与分享。
+- **Agentflow**：搭建意图路由与场景 Agent，意图识别准确率达 99%，P95 延迟为 500 ms。
+- **Agent Loop**：结合 MCP 工具与背包动态规划，实现满足多项约束的推荐。
+- **Agentic RL**：通过 LoRA 完成冷启动，再使用 Slime 进行 RL 训练；HitRate 提升 11 个百分点，约束满足率达 98%。
+- **项目职责**：负责项目从零到一的开发，构建 5 万条查询数据与评测基准，并撰写技术文章、开展技术分享。
 
 </div>
 </div>
@@ -111,11 +111,11 @@ redirect_from:
 <div class='paper-box-image'><div><h3><a href="https://baidu.com">百度 商业广告</a></h3><img src="{{ '/images/baidu.png' | relative_url }}" alt="Baidu"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**GRPO · veRL · LLM-as-a-Judge · Multi-agents · Skill** · *2026.02 - 2026.05*
+**GRPO · veRL · LLM-as-a-Judge · Multi-agents · Skill**
 
-- **策略挖掘**：HDBSCAN + Thompson Sampling；加微率 2.5% → 5.2%。
-- **模型训练**：3k 条合成外呼数据；GRPO 将销售评分从 5.92 提升到 7.49。
-- **评估体系**：LLM-as-a-Judge；图灵测试检出率 72%，模型胜率 48%。
+- **策略挖掘**：结合 HDBSCAN 与 Thompson Sampling，将微信添加率从 2.5% 提升至 5.2%。
+- **模型训练**：合成 3,000 条外呼对话数据，通过 GRPO 将销售评分从 5.92 提升至 7.49。
+- **效果评估**：采用 LLM-as-a-Judge 进行评估；图灵测试检出率为 72%，模型胜率为 48%。
 
 </div>
 </div>
@@ -125,11 +125,11 @@ redirect_from:
 <div class='paper-box-image'><div><h3><a href="https://meituan.com">美团 金融服务平台</a></h3><img src="{{ '/images/meituan.png' | relative_url }}" alt="Meituan"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Workflow · Dify · CoT · Few-shot · RAG** · *2025.03 - 2025.06*
+**Workflow · Dify · CoT · Few-shot · RAG**
 
-- **工单分类**：Dify 工作流中的 CoT 提示；准确率 >95%（+30pp）。
-- **工单检索**：BM25 + 向量混合召回；Top-10 工单端到端打通。
-- **Highlight**：项目 owner；LLM 用例交付给运营团队。
+- **工单分类**：在 Dify 工作流中设计 CoT 提示词，分类准确率超过 95%，较原方案提升 30 个百分点。
+- **工单检索**：融合 BM25 与向量召回，实现从查询到返回 Top-10 相关工单的完整流程。
+- **项目职责**：负责项目开发与落地，将 LLM 应用交付给运营团队使用。
 
 </div>
 </div>
