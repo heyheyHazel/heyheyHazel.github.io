@@ -91,7 +91,7 @@ During my internships at **Tencent**, **Baidu**, and **Meituan**, I worked on LL
 # 💻 Internships
 
 <div class='paper-box intern-box'>
-<div class='paper-box-image'><div><h3><a href="https://tencent.com">Tencent - WXG</a></h3><div class="intern-logo intern-logo--tencent"><img src="{{ '/images/tencent.png' | relative_url }}" alt="Tencent"></div></div></div>
+<div class='paper-box-image'><div><h3><a href="https://tencent.com">Tencent</a><span class="intern-department">WXG</span></h3><div class="intern-logo intern-logo--tencent"><img src="{{ '/images/tencent.png' | relative_url }}" alt="Tencent"></div></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Agentic RL · SFT · Slime · vLLM · ReAct**
@@ -106,7 +106,7 @@ During my internships at **Tencent**, **Baidu**, and **Meituan**, I worked on LL
 
 
 <div class='paper-box intern-box'>
-<div class='paper-box-image'><div><h3><a href="https://baidu.com">Baidu - Commercial Advertising</a></h3><div class="intern-logo intern-logo--baidu"><img src="{{ '/images/baidu.png' | relative_url }}" alt="Baidu"></div></div></div>
+<div class='paper-box-image'><div><h3><a href="https://baidu.com">Baidu</a><span class="intern-department">Commercial Advertising</span></h3><div class="intern-logo intern-logo--baidu"><img src="{{ '/images/baidu.png' | relative_url }}" alt="Baidu"></div></div></div>
 <div class='paper-box-text' markdown="1">
 
 **GRPO · veRL · LLM-as-a-Judge · Multi-agents · Skill**
@@ -120,7 +120,7 @@ During my internships at **Tencent**, **Baidu**, and **Meituan**, I worked on LL
 
 
 <div class='paper-box intern-box'>
-<div class='paper-box-image'><div><h3><a href="https://meituan.com">Meituan - Financial Service Platform</a></h3><div class="intern-logo intern-logo--meituan"><img src="{{ '/images/meituan.png' | relative_url }}" alt="Meituan"></div></div></div>
+<div class='paper-box-image'><div><h3><a href="https://meituan.com">Meituan</a><span class="intern-department">Financial Service Platform</span></h3><div class="intern-logo intern-logo--meituan"><img src="{{ '/images/meituan.png' | relative_url }}" alt="Meituan"></div></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Workflow · Dify · CoT · Few-shot · RAG**
